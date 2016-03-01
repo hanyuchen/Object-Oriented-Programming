@@ -4,7 +4,7 @@ Date : 2011/6/7
 
 Purpose : Develope a BankAccount class for Parkville Bank, which contains fields and functions that a BankAccount needs. Create a class containing private fields that hold the account number, account balance, and interest rate. Create public member functions for the class.
 
-Step:
+Step 1 : Set up basic account information. The account number is required, but both the balance and interest rate default to 0 if no argument is supplied to the constructor. If the account number is not between 1000 and 9999 inclusive, force it to zero. 
 
     class BankAccount{
     
@@ -42,7 +42,7 @@ Step:
     return Balan=AccBal;
     }
 
-Step: A computeInterest()function that accepts an integer argument that represents the number of years the account will earn interest. The function displays the account number, then displays the ending balance of the account each year, based on the interest rate. 
+Step 2 : A computeInterest() function that accepts an integer argument that represents the number of years the account will earn interest. The function displays the account number, then displays the ending balance of the account each year, based on the interest rate. 
 
     void computeInterest(int x){
     for(int i=1;i<=x;i++){
@@ -53,7 +53,7 @@ Step: A computeInterest()function that accepts an integer argument that represen
     }
     }
 
-Step: A displayAccount()function that displays the details of the BankAccount. You should display the information of account number, account balance, and interest rate information. 
+Step 3 : A displayAccount() function that displays the details of the BankAccount. You should display the information of account number, account balance, and interest rate information. 
 
 
 
@@ -61,7 +61,7 @@ Step: A displayAccount()function that displays the details of the BankAccount. Y
     cout<<"Account number #"<<AccNum<<"has a balance of $"<<AccBal<<"and earns"<<rate*100<<"% interest"<<endl;
     }
 
-Step : A saveMoney()function that accept an integer argument that represents the money will be saved into BankAccount. 
+Step 4 : A saveMoney() function that accept an integer argument that represents the money will be saved into BankAccount. 
 
     void saveMoney(int y)
     {
@@ -75,6 +75,7 @@ Step : A saveMoney()function that accept an integer argument that represents the
     
     };
     
+Step 5 : Set up a portfolio
     
     class Portfolio{
     public:
@@ -124,7 +125,7 @@ Step : A saveMoney()function that accept an integer argument that represents the
 
     };
 
-
+Step 6 : Test with a real case
 
     int main() 
     {
