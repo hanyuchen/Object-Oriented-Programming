@@ -42,6 +42,8 @@ Step:
     return Balan=AccBal;
     }
 
+Step: A computeInterest()function that accepts an integer argument that represents the number of years the account will earn interest. The function displays the account number, then displays the ending balance of the account each year, based on the interest rate. 
+
     void computeInterest(int x){
     for(int i=1;i<=x;i++){
      
@@ -51,11 +53,15 @@ Step:
     }
     }
 
+Step: A displayAccount()function that displays the details of the BankAccount. You should display the information of account number, account balance, and interest rate information. 
+
+
 
     void displayAccount(){
     cout<<"Account number #"<<AccNum<<"has a balance of $"<<AccBal<<"and earns"<<rate*100<<"% interest"<<endl;
     }
 
+Step : A saveMoney()function that accept an integer argument that represents the money will be saved into BankAccount. 
 
     void saveMoney(int y)
     {
@@ -117,6 +123,8 @@ Step:
 
 
     };
+
+
 
     int main() 
     {
